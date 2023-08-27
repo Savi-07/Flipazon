@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipaZon | About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="index.html">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="235px" alt="FLIPAZON"></a>
+                </div>
+                <form class="search-form">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="category.html">Product</a></li>
+                        <li><a href="index.html#Feature">Featured Products</a></li>
+                        <li><a href="index.html#Latest">Latest Products</a></li>
+                        <li><a href="account.html" target="_blank">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px " alt="" class="cart-img"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col3">
+                    <!-- <i class="fa fa-quote-left"></i> -->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit rem animi debitis vitae!
+                    </p>
+                    <img src="images/agnik-pic.jpg" alt="">
+                    <h3>Agnik Mondal</h3>
+                    <p>14200122075 </p><p>agnik.m03@gmail.com</p>
+                </div>
+                <div class="col3">
+                    <!-- <i class="fa fa-quote-left"></i> -->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit rem animi debitis vitae!
+                    </p>
+                    <img src="images/sahil_photo.jpg" alt="">
+                    <h3>Sahil Kumar Singh (C)</h3>
+                    <p>14200122064</p>
+                    <p>singhsahilkumar10@gmail.com</p>
+                    
+                </div>
+                <div class="col3">
+                    <!-- <i class="fa fa-quote-left"></i> -->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit rem animi debitis vitae!
+                    </p>
+                    <img src="images/binay-photo.jpg" alt="">
+                    <h3>Binay Das</h3>
+                    <p>14200122076 </p><p>binaydas1123@gmail.com</p>
+                </div>
+                <div class="col3">
+                    <!-- <i class="fa fa-quote-left"></i> -->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit rem animi debitis vitae!
+                    </p>
+                    <img src="images/sudipto-pic.jpg" alt="">
+                    <h3>Sudipta Mondal</h3>
+                    <p>14200122087</p> <p>sudipta39b@gmail.com</p>
+                </div>
+                <div class="col3">
+                    <!-- <i class="fa fa-quote-left"></i> -->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit rem animi debitis vitae!
+                    </p>
+                    <img src="images/sankhayan-pic.jpg" alt="">
+                    <h3>Sankhayan Sadhukhan</h3>
+                    <p>14200122078</p> <p>sankhayansadhukhan71@gmail.com</p>
+                </div>
+                <div class="col3">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit rem animi debitis vitae!
+                    </p>
+                    <img src="images/user-3.png" alt="">
+                    <h3>Raunak Das</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="../images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="images/logo.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur, ipsa quae dicta.</p>
+                </div>
+
+                <div class="footer-col3">
+                    <h3>Useful Link</h3>
+                    <ul>
+                        <li><a href="#">Coupons</a></li>
+                        <li><a href="about.html" target="_blank"> About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Sahil and group</p>
+        </div>
+
+    <!-- js for toggle menu -->
+    <script>
+        var MenuItems=document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px")
+            {
+                MenuItems.style.maxHeight="200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>

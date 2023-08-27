@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Lora', serif;
+}
+.header{
+    background: rgb(99, 193, 216);
+}
+.navbar:hover{
+    background: rgb(67, 175, 202);
+}
+.col3 p{
+    font-size: 1rem;
+}
+.testimonial .col3{
+    border: 1px solid grey;
+    border-radius:2%;
+}
